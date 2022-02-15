@@ -15,8 +15,8 @@ int fib(int n, int cache[])
         return cache[n];
     }
 
-    int first = fib(n - 1, cache);
-    int second = fib(n - 2, cache);
+    int first = fib(n - 1, cache); // recursive call
+    int second = fib(n - 2, cache); // recursive call
 
     int sum = first + second;
 
@@ -27,14 +27,18 @@ int fib(int n, int cache[])
 
 int main()
 {
-    int n = 5;
+//    n1 = 0, n2 = 1
+
+    int n = 10;
 
     int cache[n + 1];
 
-    for(int i = 0; i < n; i++)
+    for(int i = 0; i <= n; i++)
     {
         cache[i] = 0;
     }
+
+    cache[1] = 1;
 
     fib(n, cache);
 
