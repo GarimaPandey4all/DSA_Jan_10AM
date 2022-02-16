@@ -1,0 +1,12 @@
+Backtracking: 
+water, cold, no oxygen
+money bag - result to achieve
+
+N Queen Problem: count N queens place on Number of ways on N * n chessboard
+N = 4
+N * N = 16 cells
+N Queen Count = 2
+
+
+
+
